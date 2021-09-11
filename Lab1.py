@@ -65,7 +65,7 @@ unitName = choice()
 unit = getUnit(unitName)
 
 timeLine = []
-for i in range(0, 1000):
+for i in range(0, 10000):
     timeLine.append(i/1000)
 
 [y, x] = matlab.step(unit, timeLine)
