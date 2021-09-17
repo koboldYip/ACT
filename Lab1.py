@@ -74,8 +74,6 @@ def graph(num, title, y, x):
     pyplot.xlabel("Время (с)")
 
 
-type(1.)
-
 unitName = choice()
 unit = getUnit(unitName)
 
