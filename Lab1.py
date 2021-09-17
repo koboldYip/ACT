@@ -52,7 +52,7 @@ def getUnit(name):
                     unit = matlab.tf([1], [t, 1])
             elif name == 'Идеальное дифференциальное звено':
                 if t == 0:
-                    unit = matlab.tf([k, 0], [1])
+                    unit = matlab.tf([k, 0], [1 / 100000, 1])
                 else:
                     unit = matlab.tf([t, 0], [1])
             elif name == 'Реальное дифференциальное звено':
