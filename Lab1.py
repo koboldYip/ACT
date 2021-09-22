@@ -1,11 +1,9 @@
 import matplotlib.pyplot as pyplot
 import control.matlab as matlab
-import numpy
-import math
 import colorama as color
 
 units = {1: 'Безынерционное звено', 2: 'Апериодическое звено', 3: 'Интегрирующее звено',
-         4: 'Идеальное дифференциальное звено', 5: 'Реальное дифференциальное звено'}
+         4: 'Идеальное дифференцирующее звено', 5: 'Реальное дифференцирующее звено'}
 
 
 def choice():
