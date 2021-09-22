@@ -50,12 +50,12 @@ def getUnit(name):
                     unit = matlab.tf([k], [1, 0])
                 else:
                     unit = matlab.tf([1], [t, 1])
-            elif name == 'Идеальное дифференциальное звено':
+            elif name == 'Идеальное дифференцирующее звено':
                 if t == 0:
                     unit = matlab.tf([k, 0], [1 / 100000, 1])
                 else:
-                    unit = matlab.tf([t, 0], [1])
-            elif name == 'Реальное дифференциальное звено':
+                    unit = matlab.tf([t, 0], [1 / 100000, 1])
+            elif name == 'Реальное дифференцирующее звено':
                 unit = matlab.tf([k, 0], [t, 1])
         except:
             print(color.Fore.RED + "\nПожалуйста, введите числовое значение!")
